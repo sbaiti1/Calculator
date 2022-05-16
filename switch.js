@@ -1,3 +1,4 @@
+console.log('hello bitch')
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
@@ -19,3 +20,4 @@ function toggleTheme() {
        setTheme('theme-light');
    }
 })();
+

@@ -5,18 +5,19 @@
 }
 
 .theme-dark{
-    --operator:orange;
+    --operator:rgb(255, 111, 0);
     --body:white;
-    --other:rgba(128, 128, 128, 0.913);
+    --other:rgb(128, 128, 128);
 }
 body{
+    margin: 0;
     background:var(--body);
     color: var(--other);
     font-size: 25px;
 }
 .container{
     max-width: 400px;
-    margin: 25vh auto 0 auto;
+    margin: 20vh auto 0 auto;
 }
 
 .display{
@@ -33,10 +34,11 @@ body{
 }
 
 .btn{
-    padding: 15px;
+    /*padding: 15px;*/
     text-align: center;
     cursor: pointer;
-    
+    line-height: 65px;
+    border-radius: 15px;
     /*height: 40px;
     width: 40px;*/
 
@@ -46,10 +48,30 @@ body{
 }
 .btn.s:hover{
     background: none;
+    color: var(--operator);
 }
 .btn:hover{
     background: var(--operator);
+    color: var(--body);
     transition: 0.3s ease-in-out;
     
     
+}
+
+#switch{
+    border: 1px solid var(--operator);
+    border-radius: 10px;
+    text-align: center;
+    background: var(--body);
+    color: var(--operator);
+    width: 80px;
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+#switch:hover{
+    color: white;
+    background: var(--operator);
 }
